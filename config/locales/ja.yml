@@ -1,0 +1,13 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        name: 名前
+        avatar: 画像
+      tweet:
+        name: 料理名
+        ingredient: 食材
+        make: 作り方
+        genre_id: ジャンル
+        image: 画像
+        
