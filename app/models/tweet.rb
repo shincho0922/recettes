@@ -20,4 +20,12 @@ class Tweet < ApplicationRecord
       Tweet.all
     end
   end
+  
+  def self.searches(id)
+    if id != ""
+      Tweet.where('genre_id LIKE(?)', "%#{id}%")
+    else
+      Tweet.all
+    end
+  end
 end
