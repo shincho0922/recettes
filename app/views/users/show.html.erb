@@ -3,9 +3,11 @@
   <%= image_tag @user.avatar%>
   <%= @user.name %>さんの投稿一覧 
 </div>
-<div class="edit_user">
-<%= link_to "編集する", edit_user_registration_path, method: :get %>
-</div>
+<% if current_user.id == @user.id%>
+  <div class="edit_user">
+  <%= link_to "編集する", edit_user_registration_path, method: :get %>
+  </div>
+<% end %>
 <div class="tweet_content">
   <% @tweets.each do |tweet| %>
     <div class="tweet">
