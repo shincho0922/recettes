@@ -1,0 +1,82 @@
+<header class="index_header">
+  <div class="index_header_top">
+    <h1>
+      Recettes
+    </h1>
+  </div>
+  <%= form_with(url: search_tweets_path, local: true, method: :get) do |form| %>
+      <%= form.text_field :keyword, placeholder: "検索"%>
+      <%= form.submit "検索"%>
+    <% end %>
+  <div class="index_header__bar">
+    <% if user_signed_in? %>
+      <div class="index_header_botom">
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :post %>
+        <%= link_to "新規投稿", new_tweet_path, class: :post %>
+      </div>
+    <%# // ログインしているときは上記を表示するようにしましょう %>
+    <% else %>
+      <div class="index_header_botom">
+        <%= link_to "ログイン", new_user_session_path, class: :post %>
+        <%= link_to "新規登録", new_user_registration_path, class: :post %>
+      </div>
+    <%# // ログインしていないときは上記を表示するようにしましょう %>
+    <% end %>
+  </div>
+</header>
+<div class="main_content">
+  <div class="left_bar">
+    <% if user_signed_in? %>
+    <div class="index_user_name">
+      <%=link_to image_tag(current_user.avatar), user_path(current_user.id), method: :get%>
+      <%=link_to current_user.name, user_path(current_user.id), method: :get, class: 'user_name'%>
+    </div>
+    <% end %>
+    <ul>
+      <li><%= link_to "おすすめレシピ", "#" %><%= link_to image_tag('note.png'), "#" %></li>
+      <li><%= link_to "シェフ一覧", "#" %><%=link_to image_tag('hat.png') %></li>
+      <li><%= link_to "洋食一覧", "#" %><%=link_to image_tag('pan.png') %></li>
+      <li><%= link_to "中華料理一覧", "#" %><%=link_to image_tag('中華包丁.png') %></li>
+      <li><%= link_to "和食一覧", "#" %><%=link_to image_tag('wasyoku.png') %></li>
+      <li class="dummy"></li>
+    </ul>
+  </div>
+  <div class="tweet_content">
+    <% @tweets.each do |tweet| %>
+      <div class="tweet">
+        <div class="text">
+          <%= tweet.name %>
+        </div>
+        <div class="image">
+          <%= link_to image_tag(tweet.image) , tweet_path(tweet.id), method: :get %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div class="low_content">
+  <div>
+    <h3>Recettes</h3>
+    <p>プロの料理人のためのレシピアプリです。</p>
+    <p>調理業界には様々な考えをもった料理人がいます</p>
+    <p>しかし、ほとんどの料理人は本を出したり</p>
+    <p>店を持つことはありません。</p>
+    <p>そこでこのアプリを作成しました。</p>
+  </div>
+</div>
+
+<div class="message">
+  <div class='message_image'></div>
+  <div class="messages">
+  <h3>全ての料理人にチャンスを</h3>
+  <p>店を持っていなくても</p>
+  <p>本を出してていなくても</p>
+  <p>腕の良い料理人が</p>
+  <p>自分をアピールできる場所</p>
+  <p>世の中の人に</p>
+  <p>もっと多くの料理人を</p>
+  <p>知って欲しい</p>
+  <p>そんな思を込めました</p>
+  </div>
+</div>
+
