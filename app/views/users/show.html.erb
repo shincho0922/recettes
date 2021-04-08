@@ -1,7 +1,10 @@
 <%= render "shared/header" %>
 <div class=user_name>
   <%= image_tag @user.avatar%>
-  <%= @user.name %>さんの投稿一覧
+  <%= @user.name %>さんの投稿一覧 
+</div>
+<div class="edit_user">
+<%= link_to "編集する", edit_user_registration_path, method: :get %>
 </div>
 <div class="tweet_content">
   <% @tweets.each do |tweet| %>
