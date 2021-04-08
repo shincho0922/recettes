@@ -1,0 +1,16 @@
+<%= render "shared/header" %>
+
+<h1 style = "text-align: center;">シェフ一覧</h1>
+
+<div class="tweet_content">
+    <% @users.each do |user| %>
+      <div class="tweet">
+        <div class="text">
+          <%= user.name %>
+        </div>
+        <div class="image">
+          <%= link_to image_tag(user.avatar) , user_path(user.id), method: :get %>
+        </div>
+      </div>
+    <% end %>
+  </div>
