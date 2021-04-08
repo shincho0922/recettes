@@ -6,5 +6,6 @@ class User < ApplicationRecord
         has_one_attached :avatar
         has_many :tweets
 
-        validates :name,  presence: true
+        validates :name,   presence: true
+        validates :avatar, presence: true
 end
