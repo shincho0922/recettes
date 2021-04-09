@@ -1,6 +1,7 @@
 class Tweet < ApplicationRecord
   belongs_to :user
   has_one_attached :image
+  has_many :likes, dependent: :destroy
 
   with_options presence: true do
     validates :image
@@ -12,6 +13,10 @@ class Tweet < ApplicationRecord
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :genre
+
+  def like_user(user_id)
+    likes.find_by(user_id: user_id)
+  end
 
   def self.search(search)
     if search != ""

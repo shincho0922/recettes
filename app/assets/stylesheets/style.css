@@ -410,6 +410,15 @@ form input, form textarea {
 }
 /* ユーザー詳細ページのCSS */
 
-/* ユーザー一覧ページのCSS */
+/* いいね機能CSS */
+.like{
+  width: 35px;
+  margin: 0 auto;
+}
 
-/* ユーザー一覧ページのCSS */
+.vertical_like img{
+  height: 18px;
+  margin-left: 0;
+}
+
+/* いいね機能CSS */
