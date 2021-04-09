@@ -24,11 +24,11 @@
     </tr>
     <tr>
       <th>材料</th>
-      <th><%= @tweet.ingredient%></th>
+      <th><%= simple_format @tweet.ingredient%></th>
     </tr>
     <tr>
       <th>作り方</th>
-      <th><%= @tweet.make%></th>
+      <th><%= simple_format @tweet.make%></th>
     </tr>
   </tbody>
 </table>

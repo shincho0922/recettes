@@ -14,6 +14,10 @@ class Tweet < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :genre
 
+  def like_user(user_id)
+    likes.find_by(user_id: user_id)
+  end
+
   def self.search(search)
     if search != ""
       Tweet.where(['name LIKE(?) OR ingredient LIKE(?)', "%#{search}%", "%#{search}%"])
