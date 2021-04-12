@@ -249,7 +249,7 @@ form input, form textarea {
   @media (max-width: 700px) {
     .index_header_top h1 {
       font-size: 80px;
-  }
+    }
 
   .tweet_content {
     width: 70%;
@@ -363,9 +363,18 @@ form input, form textarea {
 
 .show_image{
   height: 500px;
-    margin: 0 auto;
-    justify-content: center;
-    display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+}
+@media (max-width: 700px) {
+  .show_image{
+    height: 270px;
+    width: 80%;
+  }
+  .show_image img{
+    width: 80%;
+  }
 }
 
 .show_image img{
@@ -388,6 +397,10 @@ form input, form textarea {
   text-decoration: none;
   margin-left: 10px;
   color: #00ab00;
+}
+
+.show_btn:hover{
+  background-color: #40ffff;
 }
 
 .table{
