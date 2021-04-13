@@ -42,20 +42,7 @@
     </ul>
   </div>
   <div class="tweet_content">
-    <% @tweets.each do |tweet| %>
-      <div class="tweet">
-        <div class="text">
-          <%= tweet.name %>
-        </div>
-
-        <div class="image">
-          <%= link_to image_tag(tweet.image) , tweet_path(tweet.id), method: :get %>
-        </div>
-        <div class="like", id="likes_buttons<%= tweet.id %>">
-          <%= render partial: 'likes/like', locals: { tweet: tweet, like: @like} %>
-        </div>
-      </div>
-    <% end %>
+    <%= render partial: 'tweets', locals: { tweets: @tweets} %>
   </div>
 </div>
 <div class="low_content">
