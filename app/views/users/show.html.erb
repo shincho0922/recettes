@@ -9,15 +9,5 @@
   </div>
 <% end %>
 <div class="tweet_content">
-  <% @tweets.each do |tweet| %>
-    <div class="tweet">
-      <div class="text">
-        <%= tweet.name %>
-      </div>
-      <div class="image">
-        <%= link_to image_tag(tweet.image) , tweet_path(tweet.id), method: :get %>
-      </div>
-      <%= render partial: 'likes/like', locals: { tweet: tweet, like: @like} %>
-    </div>
-  <% end %>
+  <%= render partial: 'tweets/tweets', locals: { tweets: @tweets} %>
 </div>
