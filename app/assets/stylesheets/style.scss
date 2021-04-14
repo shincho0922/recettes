@@ -84,7 +84,7 @@ form input, form textarea {
 /* 一覧ページのCSS */
 .index_header{
   height: 400px;
-  background-image: url(louis-hansel-shotsoflouis-2yTSVIh9V2s-unsplash.jpg);
+  background-image:image-url("louis-hansel-shotsoflouis-2yTSVIh9V2s-unsplash.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -216,7 +216,7 @@ form input, form textarea {
   }
 
   .low_content{
-    background-image: url(kitchen.jpg);
+    background-image:image-url("kitchen.jpg");
     height: 370px;
     background-position: center;
     background-size: cover;
@@ -232,7 +232,7 @@ form input, form textarea {
 
   .message_image{
     width: 100%;
-    background-image: url(kitchen2.jpg);
+    background-image:image-url("kitchen2.jpg");
     background-size: cover;
     background-position: center;
     max-width: 780px;
