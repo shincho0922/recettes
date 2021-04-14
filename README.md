@@ -62,9 +62,15 @@
   [![Image from Gyazo](https://i.gyazo.com/e3d4708f187c69f5c810785f27a565df.gif)](https://gyazo.com/e3d4708f187c69f5c810785f27a565df)
 
 
+* いいね機能
+  * 投稿されたレシピにいいねをする事が出来ます。
+  [![Image from Gyazo](https://i.gyazo.com/7b58568b7cff2bf5619479b69bae7f89.gif)](https://gyazo.com/7b58568b7cff2bf5619479b69bae7f89)
+
 * タグ付け機能
   * 投稿にタグをつけることでタグ一覧機能を実装しました。
   [![Image from Gyazo](https://i.gyazo.com/4058b65e25be5bb7604cfd1891f40cc5.gif)](https://gyazo.com/4058b65e25be5bb7604cfd1891f40cc5)
+
+  ※gifが上手く表示されておらず申し訳ありません
 
   ### <実装予定の機能>
   * プレビュー機能
