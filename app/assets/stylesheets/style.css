@@ -416,10 +416,10 @@ form input, form textarea {
 }
 .edit_user a{
   text-decoration: none;
-  color: rgb(144 207 48);
+  color: rgb(144,207,48);
 }
 .edit_user a:hover{
-  color: rgb(194 255 102);
+  color: rgb(194,255,102);
 }
 /* ユーザー詳細ページのCSS */
 
