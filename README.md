@@ -42,13 +42,13 @@
 
 * ユーザー管理機能
   * ログイン、ログアウトが出来ます
-  [![Image from Gyazo](https://i.gyazo.com/5b07e5da64e48f4c82c2f6139393a199.gif)](https://gyazo.com/5b07e5da64e48f4c82c2f6139393a199)
+  [![Image from Gyazo](https://i.gyazo.com/08a80f42ed17e4c44898330e02468244.gif)](https://gyazo.com/08a80f42ed17e4c44898330e02468244)
 
   * ユーザー情報を編集する事が出来ます。
   [![Image from Gyazo](https://i.gyazo.com/fd6d9948facd056121849b7e11e8add2.gif)](https://gyazo.com/fd6d9948facd056121849b7e11e8add2)
 
   * ユーザーに紐ずくレシピを見る事が出来ます
-  [![Image from Gyazo](https://i.gyazo.com/b12c44a294367ed50b6edf3d80970196.gif)](https://gyazo.com/b12c44a294367ed50b6edf3d80970196)
+  [![Image from Gyazo](https://i.gyazo.com/7e73f3faac93d9879b55f4dd8681e340.gif)](https://gyazo.com/7e73f3faac93d9879b55f4dd8681e340)
 
 * レシピ投稿機能
   * 写真付きのレシピを投稿する事ができます
@@ -59,12 +59,8 @@
 
 * 検索機能
   * 材料、料理名で検索をかける事が出来ます。
-  [![Image from Gyazo](https://i.gyazo.com/45cbe183a69db7e33f2659f3f7adddb5.gif)](https://gyazo.com/45cbe183a69db7e33f2659f3f7adddb5)
+  [![Image from Gyazo](https://i.gyazo.com/e3d4708f187c69f5c810785f27a565df.gif)](https://gyazo.com/e3d4708f187c69f5c810785f27a565df)
 
-
-* いいね機能
-  * 投稿されたレシピにいいねをする事が出来ます。
-  [![Image from Gyazo](https://i.gyazo.com/7b58568b7cff2bf5619479b69bae7f89.gif)](https://gyazo.com/7b58568b7cff2bf5619479b69bae7f89)
 
 * タグ付け機能
   * 投稿にタグをつけることでタグ一覧機能を実装しました。
@@ -72,6 +68,8 @@
 
   ### <実装予定の機能>
   * プレビュー機能
+
+  
   * いいねした投稿一覧機能
 
   ### <データベース設計>
