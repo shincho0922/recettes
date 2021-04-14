@@ -216,7 +216,7 @@ form input, form textarea {
   }
 
   .low_content{
-    background-image: url(kitchen.jpg);
+    background-image:image-url("kitchen.jpg");
     height: 370px;
     background-position: center;
     background-size: cover;
