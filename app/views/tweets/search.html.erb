@@ -1,11 +1,3 @@
 <%= render "shared/header" %>
 
-<div class="tweet_content">
-  <% if @tweets == []%>
-    <div>
-    <P>検索結果がありません。</P>
-    </div>
-  <% else %>
-    <%= render partial: 'tweets', locals: { tweets: @tweets} %>
-  <% end %>
-</div>
+<%= render partial: 'tweets', locals: { tweets: @tweets} %>
