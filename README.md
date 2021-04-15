@@ -1,4 +1,4 @@
-# Recett
+# Recettes
 
 ### <アプリケーション概要>
 
