@@ -1,0 +1,27 @@
+<%= render "shared/header" %>
+
+<div class=user_name>
+  <%= image_tag current_user.avatar%>
+  <%= current_user.name %>さんがいいねした投稿一覧 
+</div>
+<div class="tweet_content">
+  <% current_user.likes.each do |tweets| %>
+    <% if tweets == []%>
+      <div>
+      <P>いいねした投稿はありません。</P>
+      </div>
+    <% else %>
+        <div class="tweet">
+          <div class="text">
+            <%= tweets.tweet.name %>
+          </div>
+          <div class="image">
+            <%= link_to image_tag(tweets.tweet.image) , tweet_path(tweets.tweet.id), method: :get %>
+          </div>
+          <div id="likes_buttons<%= tweets.tweet.id %>">
+          <%= render partial: 'likes/like', locals: { tweet: tweets.tweet, like: @like} %>
+          </div>
+        </div>
+    <% end %>
+  <% end %>
+</div>
