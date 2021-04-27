@@ -70,13 +70,16 @@
   * 投稿にタグをつけることでタグ一覧機能を実装しました。
   [![Image from Gyazo](https://i.gyazo.com/4058b65e25be5bb7604cfd1891f40cc5.gif)](https://gyazo.com/4058b65e25be5bb7604cfd1891f40cc5)
 
+* いいね一覧機能
+  * いいねした投稿を確認できます
+  [![Image from Gyazo](https://i.gyazo.com/3511e29329be3bdb31872bda69bd115a.gif)](https://gyazo.com/3511e29329be3bdb31872bda69bd115a)
+
   ※gifが上手く表示されておらず申し訳ありません
 
   ### <実装予定の機能>
   * プレビュー機能
 
-  
-  * いいねした投稿一覧機能
+    投稿者が自分の載せた写真が一目で確認できるようにすることで、投稿がスムーズに行えるようになると思います。
 
   ### <データベース設計>
   [![Image from Gyazo](https://i.gyazo.com/377c7899656860a69ccde3c9bc460e5f.png)](https://gyazo.com/377c7899656860a69ccde3c9bc460e5f)
