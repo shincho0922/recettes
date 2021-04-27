@@ -9,6 +9,10 @@ Rails.application.routes.draw do
       get 'searches'
     end
   end
-  resources :users, only: [:index, :show]
+  resources :users, only: [:index, :show] do
+    collection do
+      get 'likes'
+    end
+  end
   root to: 'tweets#index'
 end

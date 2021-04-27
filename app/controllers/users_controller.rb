@@ -8,4 +8,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @tweets = @user.tweets.order("created_at DESC")
   end
+
+  def likes
+  end
 end
