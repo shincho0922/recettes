@@ -1,7 +1,8 @@
 <div class="container_new">
   <h3>投稿する</h3>
   <%= form_with model: @tweet, local: true do |f| %>
-    <%= f.file_field :image, style: "border: none" %>
+    <%= f.file_field :image, style: "border: none",id:"message_image" %>
+    <div id="image-list"></div>
     <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"genre-select"}) %>
     <%= f.text_area :name, placeholder: "料理名" %>
     <%= f.text_area :ingredient, placeholder: "食材", rows: "10" %>
