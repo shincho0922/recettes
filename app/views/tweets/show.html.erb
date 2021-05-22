@@ -20,15 +20,15 @@
   <tbody>
     <tr>
       <th>料理名</th>
-      <th><%= @tweet.name%></th>
+      <th style = "text-align: left;"><%= @tweet.name%></th>
     </tr>
     <tr>
       <th>材料</th>
-      <th><%= simple_format @tweet.ingredient%></th>
+      <th style = "text-align: left;"><%= simple_format @tweet.ingredient%></th>
     </tr>
     <tr>
       <th>作り方</th>
-      <th><%= simple_format @tweet.make%></th>
+      <th style = "text-align: left;"><%= simple_format @tweet.make%></th>
     </tr>
   </tbody>
 </table>
